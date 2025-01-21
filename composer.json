@@ -1,0 +1,29 @@
+{
+    "name": "matteoleonardis/product-options",
+    "version": "1.0.0",
+    "description": "Add new options for the Slick configuration in the Page Builder Product.",
+    "type": "magento2-module",
+    "require": {
+        "php": "7.*|8.*",
+        "magento/framework": "*",
+        "magento/module-page-builder": "*"
+    },
+    "license": [
+        "OSL-3.0",
+        "AFL-3.0"
+    ],
+    "authors": [
+        {
+            "name": "Matteo Leonadis",
+            "homepage": "https://www.matteoleonardis.it/"
+        }
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "matteoleonardis\\ProductOptions\\": ""
+        }
+    }
+}
