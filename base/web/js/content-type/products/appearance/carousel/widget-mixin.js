@@ -42,18 +42,18 @@ define([
             $carouselElement = $($element.children()),
             centerModeClass = 'center-mode',
             carouselMode = $element.data('carousel-mode'),
-            slidesToShow = breakpoint.options.products[carouselMode] ?
-                breakpoint.options.products[carouselMode].slidesToShow :
-                breakpoint.options.products.default.slidesToShow,
-            slidesToScroll = breakpoint.options.products[carouselMode] ?
-                breakpoint.options.products[carouselMode].slidesToScroll :
-                breakpoint.options.products[carouselMode].slidesToShow;
+            product_to_show = breakpoint.options.products[carouselMode] ?
+                breakpoint.options.products[carouselMode].product_to_show :
+                breakpoint.options.products.default.product_to_show,
+            product_to_scroll = breakpoint.options.products[carouselMode] ?
+                breakpoint.options.products[carouselMode].product_to_scroll :
+                breakpoint.options.products[carouselMode].product_to_show;
 
-        slickConfig.slidesToScroll = parseFloat(slidesToScroll);
+        slickConfig.product_to_scroll = parseFloat(product_to_scroll);
 
-        slickConfig.slidesToShow = parseFloat(slidesToShow);
+        slickConfig.product_to_show = parseFloat(product_to_show);
 
-        if (carouselMode === 'continuous' && productCount > slickConfig.slidesToShow) {
+        if (carouselMode === 'continuous' && productCount > slickConfig.product_to_show) {
             $element.addClass(centerModeClass);
             slickConfig.centerPadding = $element.data('center-padding');
             slickConfig.centerMode = true;
