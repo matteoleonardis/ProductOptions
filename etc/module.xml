@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author matteoleonardis
+ * @copyright Copyright © 2025 matteoleonardis
+ * @package matteoleonardis_ProductOptions
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
+    <module name="matteoleonardis_ProductOptions">
+        <sequence>
+            <module name="Magento_PageBuilder"/>
+        </sequence>
+    </module>
+</config>
