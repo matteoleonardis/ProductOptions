@@ -1,0 +1,94 @@
+<vars module="Magento_PageBuilder">
+        <var name="breakpoints">
+            <var name="desktop">
+                <var name="label">Desktop</var>
+                <var name="stage">true</var>
+                <var name="default">true</var>
+                <var name="class">desktop-switcher</var>
+                <var name="icon">Magento_PageBuilder::css/images/switcher/switcher-desktop.svg</var>
+                <var name="conditions">
+                    <var name="min-width">1279px</var>
+                </var>
+                <var name="options">
+                    <var name="products">
+                        <var name="default">
+                            <var name="products_to_show">4</var>
+                            <var name="products_to_scroll">4</var>
+                        </var>
+                    </var>
+                </var>
+            </var>
+            <var name="tablet">
+                <var name="conditions">
+                    <var name="max-width">1279px</var>
+                    <var name="min-width">900px</var>
+                </var>
+                <var name="options">
+                    <var name="products">
+                        <var name="default">
+                            <var name="products_to_show">3</var>
+                            <var name="products_to_scroll">3</var>
+                        </var>
+                        <var name="continuous">
+                            <var name="products_to_show">3</var>
+                            <var name="products_to_scroll">3</var>
+                        </var>
+                    </var>
+                </var>
+            </var>
+            <var name="tablet_small">
+                <var name="conditions">
+                    <var name="max-width">900px</var>
+                    <var name="min-width">767px</var>
+                </var>
+                <var name="options">
+                    <var name="products">
+                        <var name="default">
+                            <var name="products_to_show">2</var>
+                            <var name="products_to_scroll">2</var>
+                        </var>
+                        <var name="continuous">
+                            <var name="products_to_show">2</var>
+                            <var name="products_to_scroll">2</var>
+                        </var>
+                    </var>
+                </var>
+            </var>
+            <var name="mobile">
+                <var name="label">Mobile</var>
+                <var name="stage">true</var>
+                <var name="class">mobile-switcher</var>
+                <var name="icon">Magento_PageBuilder::css/images/switcher/switcher-mobile.svg</var>
+                <var name="media">only screen and (max-width: 768px)</var>
+                <var name="conditions">
+                    <var name="max-width">767px</var>
+                    <var name="min-width">640px</var>
+                </var>
+                <var name="options">
+                    <var name="products">
+                        <var name="default">
+                            <var name="products_to_show">2</var>
+                            <var name="products_to_scroll">2</var>
+                        </var>
+                    </var>
+                </var>
+            </var>
+            <var name="mobile-small">
+                <var name="conditions">
+                    <var name="max-width">640px</var>
+                </var>
+                <var name="options">
+                    <var name="products">
+                        <var name="default">
+                            <var name="products_to_show">1.5</var>
+                            <var name="products_to_scroll">1</var>
+                        </var>
+                        <var name="continuous">
+                            <var name="products_to_show">1.5</var>
+                            <var name="products_to_scroll">1</var>
+                        </var>
+                    </var>
+                </var>
+            </var>
+        </var>
+    </vars>
